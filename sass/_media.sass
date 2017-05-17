@@ -1,0 +1,114 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.mnu
+		display: none
+		text-align: center
+		width: 100%
+		background-color: black
+		top: 115px
+		left: 0px
+		height: auto
+		position: absolute
+		border-bottom: $main-color 4px solid
+		border-top: $main-color 4px solid
+		z-index: 1
+		ul
+			li
+				padding: 0
+				width: 100%
+			a
+				display: block
+				padding: 0 10px
+				background-color: transparent
+				font-size: em(20px)
+				text-transform: uppercase
+				transition: all .5s ease
+				&:hover
+					background-color: #fff
+					text-decoration: none
+	.section_5
+		.logos
+			.logos-wrap
+				padding-top: 10px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+	
+	.main-head .content-img img
+			width: 80%
+	.watches .hr
+		width: 100%
+	
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.better .icons-list li
+		height: 200px
+	.options .left-img img
+		width: 100%
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

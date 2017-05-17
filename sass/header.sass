@@ -1,0 +1,147 @@
+@import "bourbon"
+@import "vars.sass"
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+
+.header-mnu
+	min-height: 100px
+	border-bottom: 2px solid #fff
+	.logo
+		color: #ffffff
+		font-size: 40px
+		font-weight: bold
+		line-height: 100px
+	.mnu
+		text-align: center
+		ul 
+			@extend .ul-unstyled
+			li
+				display: inline-block
+				color: #fff
+				font-size: em(18px)
+				text-transform: uppercase
+				padding: 0 5px
+				line-height: 100px
+	.phone
+		float: right
+		.adress
+			color: #fff
+			font-size: em(22px)
+			float: right
+			line-height: 100px
+	.toggle-mnu
+		padding-top: 20px
+
+.main-head
+	min-height: 700px
+	background-size: cover
+	background-position: center
+	position: relative
+	img
+		display: block
+		margin: 0 auto
+	.content
+		text-align: center
+	.title
+		font-size: em(35px)
+		color: #ffffff
+		text-transform: uppercase
+		border-top: solid 2px #ffffff
+		border-bottom: solid 2px #ffffff
+	.under-title
+		font-size: em(55px)
+		color: #ffffff
+		text-transform: uppercase
+	.title1
+		font-size: em(25px)
+		color: #ffffff
+	.price
+		font-size: em(35px)
+		color: #ffffff
+	.price-yellow
+		font-size: em(35px)
+		color: yellow
+		padding-left: 40px
+	.wrap-button
+		padding-top: 150px
+		margin: 0 auto
+		display: block
+		.button-header
+			background-color: #ffc000
+			font-size: 30px
+			color: #000000
+			padding: 25px 35px
+			border-radius: 10px
+		& :hover
+			color: #fff
+			text-decoration: none
+			font-size: 24px
+			transition: all 0.7s ease
+			opacity: 0.8
+			padding: 20px 30px
+	.content-img
+		padding-top: 100px
+		img
+			width: 100%
+			
+
+
+
+	
+
+	
+
+.toggle-mnu 
+	display: block
+	width: 28px
+	height: 28px
+	margin-top: 20px
+
+.toggle-mnu span:after,
+.toggle-mnu span:before 
+	content: ""
+	position: absolute
+	left: 0
+	top: 9px
+
+.toggle-mnu span:after
+	top: 18px
+
+.toggle-mnu span 
+	position: relative
+	display: block
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before
+	width: 100%
+	height: 2px
+	background-color: #fff
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+
+
+.toggle-mnu.on span 
+	background-color: transparent
+
+.toggle-mnu.on span:before 
+	transform: rotate(45deg) translate(-1px, 0px)
+
+.toggle-mnu.on span:after 
+	transform: rotate(-45deg) translate(6px, -7px)
+
+.toggle-mnu.on + #menu 
+	opacity: 1
+	visibility: visible
+
+
+
+.hidden
+	display: none

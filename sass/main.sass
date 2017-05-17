@@ -1,0 +1,148 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+.sec-img
+	background-color: #000000
+	text-align: center
+	padding-bottom: 40px
+	.imagesss
+		ul 
+			@extend .ul-unstyled
+			li
+				display: inline-block
+				color: #fff
+				font-size: em(18px)
+				text-transform: uppercase
+				padding: 0 20px
+.watches
+	padding-bottom: 100px
+	.fotorama
+		padding-top: 100px
+		img
+	.hr
+		display: block
+		margin: 0 auto
+	.sompdd	
+		padding-top: 100px
+	.table
+		width: 100%
+		font-size: 16px
+
+		tr
+			margin: 5px 10px
+			.specs-list__title
+				padding: 1px 15px
+				line-height: 35px
+				width: 50%	
+				font-weight: bold
+		.special
+			background-color: #f7f7f7
+			border-left: 4px solid #ffc000
+
+.better
+	background-image: url('../img/bg-benefits.jpg')
+	min-height: 1000px
+	background-size: cover
+	position: relative
+	.sometite
+		text-align: center
+	.title
+		font-size: em(35px)
+		color: #ffffff
+		text-transform: uppercase
+		border-top: solid 2px #ffffff
+		border-bottom: solid 2px #ffffff
+		text-align: center
+	.under-title
+		font-size: em(55px)
+		color: #ffffff
+		text-transform: uppercase
+	.about_bred
+		color: #ffffff
+		font-size: 18px
+	.icons-list
+		list-style: none 
+		li
+			padding: 15px 0
+			height: 125px
+			img
+				float: left
+				padding-right: 10px
+		.icons-list-title
+			color: #ffffff
+			font-size: em(24px)
+			text-transform: uppercase
+			font-weight: bold
+		.icons-list-content
+			color: #b2b2b2
+	.wrap-button
+		padding-top: 150px
+		margin: 0 auto
+		display: block
+		.button-header
+			background-color: #ffc000
+			font-size: 30px
+			color: #000000
+			padding: 25px 35px
+			border-radius: 10px
+		& :hover
+			color: #fff
+			text-decoration: none
+			font-size: 24px
+			transition: all 0.7s ease
+			opacity: 0.8
+			padding: 20px 30px
+.options
+	padding-top: 50px
+	.hr
+		display: block
+		margin: 0 auto
+	.left-img
+		padding-top: 50px
+		img
+			display: block
+			margin: 0 auto
+	.right-img-title
+		padding-top: 50px
+		padding-bottom: 15px
+		color: #424242
+		font-family: "DroidSerifItalic", sans-serif
+		font-size: em(25px)
+		text-transform: uppercase
+		border-bottom: 1px solid #424242
+	.right-img-under-title
+		font-size: em(18px)
+	
+
+
+
+
+
+//ALWAYS END
+@import "media"
